@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+.wrapper {
+  width: 209px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+}
+
+.item {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .item:nth-child(n+7) {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .items {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+}
+@media (min-width: 1024px) {
+  .items {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+@media (min-width: 1720px) {
+  .wrapper-items {
+    width: 1720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .items {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+.hillel {
+  background-color: #1C4280;
+}
+
+.wannabiz {
+  background-color: #143646;
+}
+
+.tapgerine {
+  background-color: #F48B30;
+}
+
+.dlook {
+  background-color: #9E4DC3;
+}
+
+.orangear {
+  background-color: #FD9339;
+}
+
+.adtellige {
+  background-color: #E2E2E4;
+}
+
+.clickky {
+  background-color: #C71C36;
+}
+
+.eco {
+  background-color: #DCF3F9;
+}
+
+.infra {
+  background-color: #EAEAEA;
+}
+
+.city {
+  background-color: #282240;
+}
+
+.art {
+  background-color: #1D4568;
+}
+
+.ultimate {
+  background-color: #000000;
+}
+
+.trust {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #323264;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
