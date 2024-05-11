@@ -90,6 +90,35 @@ body {
     margin-bottom: 60px;
 }
 
+.service-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #24A3FF;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.img-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 92px;
+    height: 92px;
+    border-radius: 24px;
+}
+
 .services-item {
     display: flex;
     flex-direction: column;
@@ -99,10 +128,15 @@ body {
     .services-list {
        grid-template-columns: 1fr 1fr;
        grid-template-rows: repeat(3, auto);
+       gap: 60px;
     }
 
     .services-item {
         width: 294px;
+    }
+
+    .hero {
+        margin-bottom: 60px;
     }
 }
 
@@ -129,27 +163,4 @@ body {
     }
 }
 
-.service-title {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    color: #24A3FF;
-}
 
-.service-description {
-    font-size: 16px;
-    line-height: 26px;
-    text-align: left;
-    color: #FFFFFF;
-    font-weight: 400;
-}
-
-.img-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    width: 92px;
-    height: 92px;
-    border-radius: 24px;
-}
