@@ -1,0 +1,40 @@
+@use 'sass:map';
+
+$breakpoints: (
+    tablet_sd: 768px,
+    tablet_hd: 1024px,
+    desktop_sd: 1440px,
+    desktop_hd: 1920px,
+);
+
+.wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: #{map-get($breakpoints, 'tablet_sd')}) {
+    .wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media (min-width: #{map-get($breakpoints, 'desktop_hd')}) {
+    .wrapper {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat"; 
+}
+
+

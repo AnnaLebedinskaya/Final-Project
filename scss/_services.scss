@@ -7,44 +7,8 @@ $breakpoints: (
     desktop_hd: 1920px,
 );
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
+.services {
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    font-family: "Montserrat"; 
-}
-
-.wrapper {
-    width: 315px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (min-width: #{map-get($breakpoints, 'tablet_sd')}) {
-    .wrapper {
-        width: 648px;
-    }
-}
-
-@media (min-width: #{map-get($breakpoints, 'tablet_hd')}) {
-    .wrapper {
-        width: 904px;
-    } 
-}
-
-@media (min-width: #{map-get($breakpoints, 'desktop_sd')}) {
-    .wrapper {
-        width: 1320px;
-    }
-}
-
-@media (min-width: #{map-get($breakpoints, 'desktop_hd')}) {
-    .wrapper {
-        width: 1600px;
-    }
 }
 
 .section-title {

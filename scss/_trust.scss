@@ -7,21 +7,6 @@ $breakpoints: (
     desktop_hd: 1920px,
 );
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: 'Montserrat';
-}
-
-.wrapper {
-    width: 209px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .items {
     display: grid;
     grid-template-columns: 1fr;
@@ -125,6 +110,7 @@ body {
     color: #323264;
     margin-top: 0;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 
